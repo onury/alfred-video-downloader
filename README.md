@@ -7,13 +7,18 @@ Download and double click [Video-Downloader.alfredworkflow](https://github.com/o
 
 ## Usage ##
 * `vd {video-url}` will download the video file to your desktop.
-* `vd-audio {video-url}` will download the video file to your desktop, then automatically extract and create an audio file. (The original video file on desktop is deleted at the end.)
-* `vd-info {video-url}` will display some video meta-data in LArge Type and create an .info.json file on your desktop.
+* `vd-audio {video-url}` will download the video file, then automatically extract and create an audio file. (The original video file is deleted at the end.)
+* `vd-info {video-url}` will display some video meta-data in Large Type and create an *.info.json* file.
 * `vd-update` will automatically check and update the core component.
 * `vd-help` will display a quick help in Large Type.
 
+### Notes ###
+* Videos, audio and meta-data files) will be downloaded/created on your desktop.
+* When using `vd` and `vd-audio` command keywords; hold the <kbd>CMD</kbd> key and hit <kbd>ENTER</kbd> to automatically play the file after the download (or extraction) is finished.
+* This workflow will display post notifications where appropriate (before/after downloads, on download errors, updates, etc)...
+
 ## Supported Sites ##
-YouTube, Vimeo, Dailymotion, MetaCafe, Google Video, MTV, Soundcloud, Photobucket Videos, DepositFiles, blip.tv, myvideo.de, Google Plus, The Daily Show / Colbert Nation, The Escapist, CollegeHumor, arte.tv, xvideos, infoq, mixcloud, Stanford Open Content, Youku, XNXX, more... See the full (and updated) list [here](http://rg3.github.io/youtube-dl/documentation.html). 
+YouTube, Vimeo, Dailymotion, MetaCafe, Google Video, MTV, SoundCloud, PhotoBucket Videos, DepositFiles, blip.tv, myvideo.de, Google Plus, The Daily Show / Colbert Nation, The Escapist, CollegeHumor, arte.tv, xvideos, infoq, mixcloud, Stanford Open Content, Youku, XNXX, more... See the full (and updated) list [here](http://rg3.github.io/youtube-dl/documentation.html). 
 
 ## Requirements ##
 * [Python](http://www.python.org) version 2.6, 2.7, or 3.3+
