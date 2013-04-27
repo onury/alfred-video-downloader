@@ -59,5 +59,3 @@ else
     echo "Download failed! ($download_result)"
     echo "Make sure you've entered a valid video URL or parameter. Otherwise, try updating or re-installing Video Downloader."
 fi
-
-# /Users/oy/Music/iTunes/iTunes Music
