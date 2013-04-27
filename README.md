@@ -2,6 +2,9 @@
 
 Video Downloader is an **[Alfred](http://www.alfredapp.com)** workflow written in Bash/Shell for easily downloading videos (and/or extracting audio) from various websites such as YouTube, Vimeo, DailyMotion and more... It uses [youtube-dl](http://rg3.github.io/youtube-dl) as the core component.
 
+## Installation ##
+Download and double click [Video-Downloader.alfredworkflow](https://github.com/onury/video-downloader-workflow/blob/master/bin/Video-Downloader.alfredworkflow). It will be imported into Alfred automatically.
+
 ## Usage ##
 * `vd {video-url}` will download the video file to your desktop.
 * `vd-audio {video-url}` will download the video file to your desktop, then automatically extract and create an audio file. (The original video file on desktop is deleted at the end.)
