@@ -14,7 +14,7 @@ YouTube, Vimeo, Dailymotion, MetaCafe, Google Video, MTV, Soundcloud, Photobucke
 
 ## Requirements ##
 * [Python](http://www.python.org) version 2.6, 2.7, or 3.3+
-* [FFmpeg](http://www.ffmpeg.org) (optional, required for extract-audio feature)
+* [FFmpeg](http://www.ffmpeg.org) (optional, required for audio extraction feature)
 
 ### Audio Extraction ###
 For this (`vd-audio`) feature, you should install FFmpeg yourself manually (because of licensing issues).
