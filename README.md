@@ -1,9 +1,15 @@
 ## Video Downloader (Workflow) for Alfred ##
 
-Video Downloader is an Alfred workflow written in Bash/Shell for easily downloading videos (and/or extracting audio) from various websites such as YouTube, Vimeo, DailyMotion and more... It uses [youtube-dl](http://rg3.github.io/youtube-dl) as the core component.
+Video Downloader is an **[Alfred](http://www.alfredapp.com)** workflow written in Bash/Shell for easily downloading videos (and/or extracting audio) from various websites such as YouTube, Vimeo, DailyMotion and more... It uses [youtube-dl](http://rg3.github.io/youtube-dl) as the core component.
+
+## Usage ##
+* `vd {video-url}` will download the video file to your desktop.
+* `vd-audio {video-url}` will download the video file to your desktop, then automatically extract and create an audio file. (The original video file on desktop is deleted at the end.)
+* `vd-info {video-url}` will display some video meta-data in LArge Type and create an .info.json file on your desktop.
+* `vd-update` will automatically check and update the core component.
+* `vd-help` will display a quick help in Large Type.
 
 ## Requirements ##
-* [Alfred 2](http://www.alfredapp.com)
 * [Python](http://www.python.org) version 2.6, 2.7, or 3.3+
 * [FFmpeg](http://www.ffmpeg.org) (optional, required for extract-audio feature)
 
@@ -17,10 +23,10 @@ For this (vd-audio) feature, you should install FFmpeg yourself manually (becaus
 
 One way to install FFmpeg is;
 
-1. Install XCode
-2. Install Command Line Tools for Xcode
-3. Install MacPorts (from www.macports.org)
-4. Install FFmpeg by running the command below in Terminal:
+1. Install **[XCode](https://developer.apple.com/xcode/)**
+2. Install **Command Line Tools** for Xcode (find it [here](https://developer.apple.com/downloads))
+3. Install **[MacPorts](www.macports.org)**
+4. Install **FFmpeg** by running the command below in Terminal:
 
 ```shell
     $ sudo port install ffmpeg
@@ -35,6 +41,6 @@ You can append these options to enable support for various codecs and FFmpeg fea
 ---
 
 ## License ##
-Video Downloader workflow is released to the public domain. (Do whatever you like with it.)  
-FFmpeg is a trademark of Fabrice Bellard and it is licensed under LGPL version 2.1
+**Video Downloader** workflow is released to the public domain. (Do whatever you like with it.)  
+**FFmpeg** is a trademark of Fabrice Bellard and it is licensed under LGPL version 2.1
 http://www.ffmpeg.org/legal.html
