@@ -3,9 +3,9 @@
 Video Downloader is an Alfred workflow written in Bash/Shell for easily downloading videos (and/or extracting audio) from various websites such as YouTube, Vimeo, DailyMotion and more... It uses [youtube-dl](http://rg3.github.io/youtube-dl) as the core component.
 
 ## Requirements ##
-[Alfred 2](http://www.alfredapp.com)
-[Python](http://www.python.org) version 2.6, 2.7, or 3.3+
-[FFmpeg](http://www.ffmpeg.org) (optional, required for extract-audio feature)
+* [Alfred 2](http://www.alfredapp.com)
+* [Python](http://www.python.org) version 2.6, 2.7, or 3.3+
+* [FFmpeg](http://www.ffmpeg.org) (optional, required for extract-audio feature)
 
 ## Supported Sites ##
 YouTube, Vimeo, Dailymotion, MetaCafe, Google Video, MTV, Soundcloud, Photobucket Videos, DepositFiles, blip.tv, myvideo.de, Google Plus, The Daily Show / Colbert Nation, The Escapist, CollegeHumor, arte.tv, xvideos, infoq, mixcloud, Stanford Open Content, Youku, XNXX, more... See the full (and updated) list [here](http://rg3.github.io/youtube-dl/documentation.html). 
@@ -35,6 +35,6 @@ You can append these options to enable support for various codecs and FFmpeg fea
 ---
 
 ## License ##
-Video Downloader workflow is released to the public domain. (Do whatever you like with it.)
+Video Downloader workflow is released to the public domain. (Do whatever you like with it.)  
 FFmpeg is a trademark of Fabrice Bellard and it is licensed under LGPL version 2.1
 http://www.ffmpeg.org/legal.html
