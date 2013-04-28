@@ -1,4 +1,5 @@
 #!/bin/bash
+# Author: Onur Yildirim (onur@cutepilot.com)
 
 # -------------------------------------
 # CONSTANTS
@@ -43,13 +44,14 @@ if $extract_audio; then
     fi
 fi
 
-yt_output="$("$yt" $options "$video_url")"
+yt_output=$("$yt" $options "$video_url")
 download_result=$?
 
 if [ $download_result -eq 0 ]; then
     filepath="$("$yt" $options --get-filename "$video_url")"
-    if $extract_audio && $ffmpeg_installed; then filepath="$(remove_extension "$filepath").$audio_format"; fi
+    if $extract_audio && $ffmpeg_installed; then filepath="$(remove_ext "$filepath").$audio_format"; fi
     if $play; then
+        sleep 2
         open "$filepath"
         echo "Now Playing: $filepath"
     else

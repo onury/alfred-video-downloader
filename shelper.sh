@@ -1,5 +1,5 @@
 #!/bin/bash
-# Author: Onur YILDIRIM (oy@onuryildirim.com)
+# Author: Onur Yildirim (onur@cutepilot.com)
 
 # ----------------------------------------------
 #   FILE/SCRIPT HELPER FUNCTIONS
@@ -35,16 +35,23 @@ function lower {
 
 # Checks whether a string contains the given sub-string.
 # example: 
-#       is_2013=$(contains_str "2013-04-10" "2013-")
+#       found=$(contains_str "this is some text" "text")
 function contains_str() {
     [[ "$1" == *"$2"* ]] && echo true || echo false
 }
 
 # Removes the extension portion of a (file name) string.
 # example: 
-#       filename=$(remove_extension "somefile.txt")
-function remove_extension() {
-    echo "$1" | cut -f1 -d'.'
+#       filename=$(remove_ext "somefile.txt") # somefile
+function remove_ext() {
+    echo "${1%.*}"
+}
+
+# Removes the extension portion of a (file name) string.
+# example: 
+#       filename=$(get_ext "somefile.txt") # txt
+function get_ext() {
+    echo "${1##*.}"
 }
 
 # Removes new-line (\n) characters from the given string.
@@ -73,8 +80,17 @@ function escape() {
 #   ARRAY HELPER FUNCTIONS
 # ----------------------------------------------
 
-function in_array() {
-    [[ "$1[@]" =~ "$2 " || "$1[${#1[@]-1]}" == "$2" ]] && echo true || echo false
+# Checks whether the given array contains the specified string.
+# Arguments:
+#   $1  string - The string to be searched for.
+#   $2  array - The array to be searched. Should be passed as "${arr[@]}".
+# Example:
+#   arr=("cat 1" dog "blue bird" monkey)
+#   in_array "monkey" "${arr[@]}"
+function in_array () {
+    local e
+    for e in "${@:2}"; do [[ "$e" == "$1" ]] && return 0; done
+    return 1
 }
 
 # ----------------------------------------------
@@ -100,7 +116,3 @@ function dash_date() {
     if [ -z $d ]; then d="-"; fi
     echo ${1:0:4}$d${1:4:2}$d${1:6:2}
 }
-
-
-
-

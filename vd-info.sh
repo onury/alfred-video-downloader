@@ -1,4 +1,5 @@
 #!/bin/bash
+# Author: Onur Yildirim (onur@cutepilot.com)
 
 # -------------------------------------
 # CONSTANTS
