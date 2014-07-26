@@ -14,6 +14,7 @@ And here is how the workflow nodes look like:
 Download and double click [Video-Downloader.alfredworkflow](https://github.com/onury/video-downloader-workflow/raw/master/bin/Video-Downloader.alfredworkflow). It will be imported into Alfred automatically.
 
 ## Usage ##
+* `vd-update` will automatically check and update the core component. Run this first when you import the workflow.
 * `vd {video-url}` will download the video file to your desktop.
 
 ![Video Downloader](https://raw.github.com/onury/video-downloader-workflow/master/common/images/screenshots/ss-2.jpg "Video Downloader - Alfred Workflow")
@@ -23,7 +24,6 @@ Download and double click [Video-Downloader.alfredworkflow](https://github.com/o
 ![Video Downloader](https://raw.github.com/onury/video-downloader-workflow/master/common/images/screenshots/ss-3.jpg "Video Downloader - Alfred Workflow")
 
 * `vd-info {video-url}` will display some video meta-data in Large Type and create an *.info.json* file.
-* `vd-update` will automatically check and update the core component.
 * `vd-help` will display a quick help in Large Type.
 
 ### Notes ###
