@@ -11,7 +11,7 @@ CURRENT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 # IMPORTS
 # -------------------------------------
 
-# create if does not exist
+# create if doesn't exist
 touch ~/.bash_profile
 
 source ~/.bash_profile
