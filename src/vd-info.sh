@@ -11,6 +11,9 @@ CURRENT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 # IMPORTS
 # -------------------------------------
 
+# create if doesn't exist
+touch ~/.bash_profile
+
 source ~/.bash_profile
 source "$CURRENT_DIR"/shelper.sh
 
@@ -18,7 +21,7 @@ source "$CURRENT_DIR"/shelper.sh
 # VARIABLES
 # -------------------------------------
 
-yt="$CURRENT_DIR/youtube-dl"
+yt="$CURRENT_DIR/bin/youtube-dl"
 video_url="$1" # "{query}"
 download_dir="$HOME/Desktop"
 output_format="$download_dir/%(title)s.%(ext)s"
@@ -55,7 +58,7 @@ if [ $result -eq 0 ]; then
     echo "Resolution: $(echo $format | sed 's/.*\- //')"
     echo "Duration: $(secs_to_time $duration)"
     echo "Uploaded by: $uploader"
-    echo "Upload Date: $(dash_date $upload_date)"
+    echo "Upload Date: $(delim_date $upload_date)"
     echo
     echo "Description:"
     echo "$description"

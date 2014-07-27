@@ -11,6 +11,9 @@ CURRENT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 # IMPORTS
 # -------------------------------------
 
+# create if does not exist
+touch ~/.bash_profile
+
 source ~/.bash_profile
 source "$CURRENT_DIR"/shelper.sh
 source "$CURRENT_DIR"/workflowHandler.sh
@@ -19,7 +22,7 @@ source "$CURRENT_DIR"/workflowHandler.sh
 # VARIABLES
 # -------------------------------------
 
-yt="$CURRENT_DIR/youtube-dl"
+yt="$CURRENT_DIR/bin/youtube-dl"
 video_url="$1" # "{query}"
 download_dir="$HOME/Desktop"
 output_format="$download_dir/%(title)s.%(ext)s"

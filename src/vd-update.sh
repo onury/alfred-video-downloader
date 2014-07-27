@@ -10,7 +10,7 @@ CURRENT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 # VARIABLES
 # -------------------------------------
 
-yt="$CURRENT_DIR/youtube-dl"
+yt="$CURRENT_DIR/bin/youtube-dl"
 
 # -------------------------------------
 # PROGRAM ROUTINE

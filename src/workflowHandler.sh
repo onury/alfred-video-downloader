@@ -1,6 +1,5 @@
 #!/bin/bash
 
-# Edited by Onur YILDIRIM
 CURRENT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 VPREFS="${HOME}/Library/Caches/com.runningwithcrayons.Alfred-2/Workflow Data/"
 NVPREFS="${HOME}/Library/Application Support/Alfred 2/Workflow Data/"

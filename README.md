@@ -1,4 +1,5 @@
 ## Video Downloader (Workflow) for Alfred ##
+version 1.1 (2014-07-28)
 
 Video Downloader is an **[Alfred](http://www.alfredapp.com)** workflow written in Bash/Shell for easily downloading videos (and/or extracting audio) from various websites such as YouTube, Vimeo, DailyMotion and more... It uses [youtube-dl](http://rg3.github.io/youtube-dl) as the core component.
 
@@ -11,9 +12,10 @@ And here is how the workflow nodes look like:
 ![Video Downloader](https://raw.github.com/onury/video-downloader-workflow/master/common/images/screenshots/wf.jpg "Video Downloader - Alfred Workflow")
 
 ## Installation ##
-Download and double click [Video-Downloader.alfredworkflow](https://github.com/onury/video-downloader-workflow/blob/master/bin/Video-Downloader.alfredworkflow). It will be imported into Alfred automatically.
+Download and double click [Video-Downloader.alfredworkflow](https://github.com/onury/video-downloader-workflow/raw/master/dist/Video-Downloader.alfredworkflow). It will be imported into Alfred automatically.
 
 ## Usage ##
+* `vd-update` will automatically check and update the core component. Run this first when you import the workflow.
 * `vd {video-url}` will download the video file to your desktop.
 
 ![Video Downloader](https://raw.github.com/onury/video-downloader-workflow/master/common/images/screenshots/ss-2.jpg "Video Downloader - Alfred Workflow")
@@ -23,7 +25,6 @@ Download and double click [Video-Downloader.alfredworkflow](https://github.com/o
 ![Video Downloader](https://raw.github.com/onury/video-downloader-workflow/master/common/images/screenshots/ss-3.jpg "Video Downloader - Alfred Workflow")
 
 * `vd-info {video-url}` will display some video meta-data in Large Type and create an *.info.json* file.
-* `vd-update` will automatically check and update the core component.
 * `vd-help` will display a quick help in Large Type.
 
 ### Notes ###
@@ -32,7 +33,7 @@ Download and double click [Video-Downloader.alfredworkflow](https://github.com/o
 * This workflow will display post notifications where appropriate (before/after downloads, on download errors, updates, etc)...
 
 ## Supported Sites ##
-YouTube, Vimeo, Dailymotion, MetaCafe, Google Video, MTV, SoundCloud, PhotoBucket Videos, DepositFiles, blip.tv, myvideo.de, Google Plus, The Daily Show / Colbert Nation, The Escapist, CollegeHumor, arte.tv, xvideos, infoq, mixcloud, Stanford Open Content, Youku, XNXX, more... See the full (and updated) list [here](http://rg3.github.io/youtube-dl/documentation.html). 
+YouTube, Vimeo, Dailymotion, MetaCafe, Google Video, MTV, SoundCloud, PhotoBucket Videos, DepositFiles, blip.tv, myvideo.de, Google Plus, The Daily Show / Colbert Nation, The Escapist, CollegeHumor, arte.tv, xvideos, infoq, mixcloud, Stanford Open Content, Youku, XNXX, more... See the full (and updated) list [here](http://rg3.github.io/youtube-dl/documentation.html).
 
 ## Requirements ##
 * [Python](http://www.python.org) version 2.6, 2.7, or 3.3+
@@ -59,6 +60,6 @@ You can append these options to enable support for various codecs and FFmpeg fea
 ```
 
 ## License ##
-**Video Downloader** workflow is released to the public domain. (Do whatever you like with it.)  
+**Video Downloader** workflow is released to the public domain. (Do whatever you like with it.)
 *FFmpeg is a trademark of Fabrice Bellard and it is licensed under LGPL version 2.1
 http://www.ffmpeg.org/legal.html*
